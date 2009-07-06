@@ -1,0 +1,19 @@
+.field-checklist > label {
+	margin-bottom: 0;
+}
+.field-checklist > div {
+	background: #f5f5f3;
+	border: 1px solid #e4e4de;
+	margin: 2px 0 1.5em 0;
+	display: table;
+	border-spacing: 1em;
+	width: 100%;
+}
+.field-checklist > div > * {
+	display: table-cell;
+	white-space: nowrap;
+	width: 1%;
+}
+.field-checklist > div > :last-child {
+	width: auto;
+}
