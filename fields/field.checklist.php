@@ -172,8 +172,8 @@
 		
 		public function prepareTableValue($data, XMLElement $link = null) {
 			if (empty($data)) return;
-			
-			$value = implode(', ', $data['value']);
+			if (is_array($data['value'])) $value = implode(', ', $data['value']);
+			else $value = $data['value'];
 			
 			return parent::prepareTableValue(
 				array(
