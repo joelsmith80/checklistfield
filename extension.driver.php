@@ -9,13 +9,13 @@
 			return array(
 				'name'			=> 'Field: Check List',
 				'version'		=> '1.0.1',
-				'release-date'	=> '2009-03-18',
+				'release-date'	=> '2009-12-01',
 				'author'		=> array(
 					'name'			=> 'Rowan Lewis',
 					'website'		=> 'http://pixelcarnage.com/',
 					'email'			=> 'rowan@pixelcarnage.com'
 				),
-				'description' => 'A simple field that represents multiple check boxes.'
+				'description' => 'A simple field that lets you create logical groups of checkboxes.'
 			);
 		}
 		
