@@ -173,8 +173,15 @@
 		public function prepareTableValue($data, XMLElement $link = null) {
 			if (empty($data)) return;
 			
-			$value = implode(', ', $data['value']);
+			$value = '';
 			
+			if (isset($data['value'])) {
+				if (!is_array($data['value'])) {
+					$data['value'] = array($data['value']);
+				}
+				$value = implode(', ', $data['value']);
+			}
+				
 			return parent::prepareTableValue(
 				array(
 					'value'		=> General::sanitize(strip_tags($value))
